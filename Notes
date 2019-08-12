@@ -7,4 +7,6 @@ Open source lib built on top of Numpy
 It is like excel 
 Can work with data from a wide variety of sources
 
-Series, DataFrames, GroupBy, Merging, Joining, Concatenating
+Series, DataFrames, GroupBy, Merging, Joining, Concatenating, Operations, Data in and out
+
+
