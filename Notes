@@ -1,0 +1,10 @@
+Numpy
+arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, axis
+
+
+Pandas
+Open source lib built on top of Numpy
+It is like excel 
+Can work with data from a wide variety of sources
+
+Series, DataFrames, GroupBy, Merging, Joining, Concatenating
