@@ -1,12 +1,17 @@
 Numpy
-arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, axis
+arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, axis=0 for rows, 1 for columns
 
 
 Pandas
 Open source lib built on top of Numpy
 It is like excel 
 Can work with data from a wide variety of sources
+set inplace = True wherever applicable. Otherwise the changes made will not be applied as this is a precaution in pandas
 
 Series, DataFrames, GroupBy, Merging, Joining, Concatenating, Operations, Data in and out
+Series - index and datapoints
+use bracket notation for requesting a column - variable['columnName']
 
-
+Shortcut
+pd.TAB - shows all the methods
+pd.DataFrame(SHIFT+TAB) - shows arguments involved
