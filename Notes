@@ -1,5 +1,5 @@
 Numpy
-arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, axis=0 for rows, 1 for columns
+arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, mean, axis (0 for rows, 1 for columns)
 
 
 Pandas
@@ -15,3 +15,18 @@ use bracket notation for requesting a column - variable['columnName']
 Shortcut
 pd.TAB - shows all the methods
 pd.DataFrame(SHIFT+TAB) - shows arguments involved
+
+Methods - loc, xs, iloc, reset_index, set_index, dropna, zip, pd.MultiIndex.from_tuples, fillna, groupby, describe, transpose, concat, merge, join, head, unique, nunique, value_counts, apply, drop, columns, rows, index, sort_values, isnull, pivot_table, info 
+Arguments - axis, level, thresh, inplace (True to change the original index values), value/values, how, on, by, index, columns
+
+data sources - CSV, Excel, HTML, SQL
+Libraries to work with SQL and HTML- sqlalchemy, lxml, html5lib, BeautifulSoup4, xlrd
+
+pwd can be used in jupyter notebook to check the location. All the Data files (CSV, Excel, etc.) must be located in that location.
+
+Pandas can read files from a variety of sources - pd.read_ (press tab to see the sources)
+Read - pd.read_csv
+write - pd.to_csv
+
+SQL - There are many flavours of sql like postgreSQL, Sqlite etc. Use specific drivers for each of them.
+PostgreSql uses psycopg2 lib, mySQL uses pymysql
