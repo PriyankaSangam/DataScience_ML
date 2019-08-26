@@ -1,8 +1,8 @@
-Numpy
+Numpy (np)
 arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, mean, axis (0 for rows, 1 for columns)
 
 
-Pandas
+Pandas (pd)
 Open source lib built on top of Numpy
 It is like excel 
 Can work with data from a wide variety of sources
@@ -30,3 +30,21 @@ write - pd.to_csv
 
 SQL - There are many flavours of sql like postgreSQL, Sqlite etc. Use specific drivers for each of them.
 PostgreSql uses psycopg2 lib, mySQL uses pymysql
+
+
+Matplotlib (plt)
+plt.show()  - use this instead of "%matplotlib inline" when not using jupyter notebook
+You can use the same commands as matplotlib to change color of plot, etc
+function - plot, xlabel, ylabel, title, subplot(rows, columns, plot no.), 
+
+Object Oriented - figure, add_axes([left, bottom, width, height]), set_xlabel, set_ylabel, set_title, plot(x,y,color,linewidth/lw,alpha,linestyle/ls,marker,markersize,markerfacecolor,markeredgewidth,markeredgecolor), subplots(nrows, ncols),tight_layout, legend(loc), label, set_xlim(lowerbound,upperbound), set_ylim, scatter
+
+
+Seaborn (sns)
+load_dataset 
+Distribution - distplot([col_name], kde,bins), kdeplot, jointplot(x=col,y=col,data,kind=scatter/hex/kde/reg), pairplot(data,hue,palette), rugplot([col]) 
+Categorical - barplot(x,y,data,estimator), countplot, boxplot, violinplot, stripplot, swarmplot, factorplot 
+Matrix - heatmap(cmap,linecolor,linewidths), clustermap
+Grid - PairGrid, FacetGrid, map, map_diagonal, map_upper, map_lower
+Regression - lmplot(x,y,data,hue)
+set_style, set_context
