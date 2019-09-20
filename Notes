@@ -1,8 +1,10 @@
 Numpy
+import numpy as np
 arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, mean, axis (0 for rows, 1 for columns)
 
 
 Pandas
+import pandas as pd
 Open source lib built on top of Numpy
 It is like excel 
 Can work with data from a wide variety of sources
@@ -41,6 +43,15 @@ apply - used to apply any functions. Ex: len or your own function
 index
 idmax and idmin - Return index of first occurrence of max/min over requested axis
 shape - returns number of rows and columns
+df.plot.hist(bins=20)
+df.plot.area(alpha=0.4)
+df.plot.bar(stacked = True)
+df.plot.line(x=df,y=column,etc....)
+df.plot.scatter(x,y,c,cmap)
+df.plot.hexbin(x,y,gridsize)
+df.plot.kde()
+df.plot.density()
+
 
 Arguments - axis, level, thresh, inplace (True to change the original index values), value/values, how, on, by, index, columns
 
@@ -55,3 +66,24 @@ write - pd.to_csv
 
 SQL - There are many flavours of sql like postgreSQL, Sqlite etc. Use specific drivers for each of them.
 PostgreSql uses psycopg2 lib, mySQL uses pymysql
+
+Matplotlib
+%matplotlib inline - use this when using jupyter notebook, else you need to use plt for plotting
+df['column'].hist - creates histogram
+
+Seaborn - have more control on how the graphs look
+import seaborn as sns
+
+
+plotly and cufflinks - to view the plots in interactive mode
+import cufflinks as cf
+you need to import libraries from plotly in order to work offline and free source. 
+from plotly import __version__
+from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
+init_notebook_mode(connected = True)
+cf.go_offline()
+
+
+
+
+
