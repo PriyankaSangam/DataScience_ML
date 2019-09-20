@@ -12,11 +12,36 @@ Series, DataFrames, GroupBy, Merging, Joining, Concatenating, Operations, Data i
 Series - index and datapoints
 use bracket notation for requesting a column - variable['columnName']
 
+Series methods - https://pandas.pydata.org/pandas-docs/stable/reference/series.html
+DataFrame methods - https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
+
 Shortcut
 pd.TAB - shows all the methods
 pd.DataFrame(SHIFT+TAB) - shows arguments involved
 
-Methods - loc, xs, iloc, reset_index, set_index, dropna, zip, pd.MultiIndex.from_tuples, fillna, groupby, describe, transpose, concat, merge, join, head, unique, nunique, value_counts, apply, drop, columns, rows, index, sort_values, isnull, pivot_table, info 
+Methods - loc, xs, iloc, reset_index, set_index, dropna, zip, pd.MultiIndex.from_tuples, fillna, groupby, describe, transpose, concat, merge, join, head, unique, nunique, value_counts, apply, drop, columns, rows, index, idxmax, idxmin, sort_values, isnull, pivot_table, info 
+
+type(anything) - returns the data type
+loc - location
+iloc - integer location
+xs - used when there is multiple indexing
+reset_index
+set_index
+drop - rows or columns
+dropna - delete the NaN values
+zip 
+groupby('column name') 
+describe - returns all the std calculations. ex: max, min, mean/average, etc
+head - returns the first five values in table. Can be set to any number of values
+unique - unique values
+nunique - only the number of unique values
+value_counts - counts the number of times the same data appears in a column and returns in the decreasing order.
+sort_values
+apply - used to apply any functions. Ex: len or your own function
+index
+idmax and idmin - Return index of first occurrence of max/min over requested axis
+shape - returns number of rows and columns
+
 Arguments - axis, level, thresh, inplace (True to change the original index values), value/values, how, on, by, index, columns
 
 data sources - CSV, Excel, HTML, SQL
