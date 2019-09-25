@@ -95,3 +95,26 @@ from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
 init_notebook_mode(connected = True)
 cf.go_offline()
 
+
+scikit-learn
+from sklearn.family import model
+from sklearn.linear_model import LinearRegression
+
+model = LinearRegression(normalize = True, copy_X = True, fit_intercept = True)
+from sklearn.cross_validation import train_test_split
+X_train,X_test,y_train,y_test = train_test_split(X,y,size=0.3)
+
+supervised have following methods available
+model.fit(X_train,y_train)
+model.predict(X_test)
+model.predict_proba()
+model.score()
+
+unsupervised
+model.fit(X_train)
+model.predict()
+model.transform()
+model.fit_transform()
+
+
+
