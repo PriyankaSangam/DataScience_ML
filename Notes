@@ -1,10 +1,8 @@
-Numpy
-import numpy as np
+
+Numpy (np)
 arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, mean, axis (0 for rows, 1 for columns)
 
-
-Pandas
-import pandas as pd
+Pandas (pd)
 Open source lib built on top of Numpy
 It is like excel 
 Can work with data from a wide variety of sources
@@ -67,12 +65,26 @@ write - pd.to_csv
 SQL - There are many flavours of sql like postgreSQL, Sqlite etc. Use specific drivers for each of them.
 PostgreSql uses psycopg2 lib, mySQL uses pymysql
 
-Matplotlib
+
+Matplotlib (plt)
 %matplotlib inline - use this when using jupyter notebook, else you need to use plt for plotting
 df['column'].hist - creates histogram
+plt.show()  - use this instead of "%matplotlib inline" when not using jupyter notebook
+You can use the same commands as matplotlib to change color of plot, etc
+function - plot, xlabel, ylabel, title, subplot(rows, columns, plot no.), 
 
-Seaborn - have more control on how the graphs look
-import seaborn as sns
+Object Oriented - figure, add_axes([left, bottom, width, height]), set_xlabel, set_ylabel, set_title, plot(x,y,color,linewidth/lw,alpha,linestyle/ls,marker,markersize,markerfacecolor,markeredgewidth,markeredgecolor), subplots(nrows, ncols),tight_layout, legend(loc), label, set_xlim(lowerbound,upperbound), set_ylim, scatter
+
+
+Seaborn (sns)
+have more control on how the graphs look
+load_dataset 
+Distribution - distplot([col_name], kde,bins), kdeplot, jointplot(x=col,y=col,data,kind=scatter/hex/kde/reg), pairplot(data,hue,palette), rugplot([col]) 
+Categorical - barplot(x,y,data,estimator), countplot, boxplot, violinplot, stripplot, swarmplot, factorplot 
+Matrix - heatmap(cmap,linecolor,linewidths), clustermap
+Grid - PairGrid, FacetGrid, map, map_diagonal, map_upper, map_lower
+Regression - lmplot(x,y,data,hue)
+set_style, set_context
 
 
 plotly and cufflinks - to view the plots in interactive mode
@@ -82,8 +94,4 @@ from plotly import __version__
 from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
 init_notebook_mode(connected = True)
 cf.go_offline()
-
-
-
-
 
