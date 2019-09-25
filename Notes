@@ -1,0 +1,97 @@
+
+Numpy (np)
+arange, linspace, random, randomint,randomn, reshape, sum, std, max, min, avg, mean, axis (0 for rows, 1 for columns)
+
+Pandas (pd)
+Open source lib built on top of Numpy
+It is like excel 
+Can work with data from a wide variety of sources
+set inplace = True wherever applicable. Otherwise the changes made will not be applied as this is a precaution in pandas
+
+Series, DataFrames, GroupBy, Merging, Joining, Concatenating, Operations, Data in and out
+Series - index and datapoints
+use bracket notation for requesting a column - variable['columnName']
+
+Series methods - https://pandas.pydata.org/pandas-docs/stable/reference/series.html
+DataFrame methods - https://pandas.pydata.org/pandas-docs/stable/reference/frame.html
+
+Shortcut
+pd.TAB - shows all the methods
+pd.DataFrame(SHIFT+TAB) - shows arguments involved
+
+Methods - loc, xs, iloc, reset_index, set_index, dropna, zip, pd.MultiIndex.from_tuples, fillna, groupby, describe, transpose, concat, merge, join, head, unique, nunique, value_counts, apply, drop, columns, rows, index, idxmax, idxmin, sort_values, isnull, pivot_table, info 
+
+type(anything) - returns the data type
+loc - location
+iloc - integer location
+xs - used when there is multiple indexing
+reset_index
+set_index
+drop - rows or columns
+dropna - delete the NaN values
+zip 
+groupby('column name') 
+describe - returns all the std calculations. ex: max, min, mean/average, etc
+head - returns the first five values in table. Can be set to any number of values
+unique - unique values
+nunique - only the number of unique values
+value_counts - counts the number of times the same data appears in a column and returns in the decreasing order.
+sort_values
+apply - used to apply any functions. Ex: len or your own function
+index
+idmax and idmin - Return index of first occurrence of max/min over requested axis
+shape - returns number of rows and columns
+df.plot.hist(bins=20)
+df.plot.area(alpha=0.4)
+df.plot.bar(stacked = True)
+df.plot.line(x=df,y=column,etc....)
+df.plot.scatter(x,y,c,cmap)
+df.plot.hexbin(x,y,gridsize)
+df.plot.kde()
+df.plot.density()
+
+
+Arguments - axis, level, thresh, inplace (True to change the original index values), value/values, how, on, by, index, columns
+
+data sources - CSV, Excel, HTML, SQL
+Libraries to work with SQL and HTML- sqlalchemy, lxml, html5lib, BeautifulSoup4, xlrd
+
+pwd can be used in jupyter notebook to check the location. All the Data files (CSV, Excel, etc.) must be located in that location.
+
+Pandas can read files from a variety of sources - pd.read_ (press tab to see the sources)
+Read - pd.read_csv
+write - pd.to_csv
+
+SQL - There are many flavours of sql like postgreSQL, Sqlite etc. Use specific drivers for each of them.
+PostgreSql uses psycopg2 lib, mySQL uses pymysql
+
+
+Matplotlib (plt)
+%matplotlib inline - use this when using jupyter notebook, else you need to use plt for plotting
+df['column'].hist - creates histogram
+plt.show()  - use this instead of "%matplotlib inline" when not using jupyter notebook
+You can use the same commands as matplotlib to change color of plot, etc
+function - plot, xlabel, ylabel, title, subplot(rows, columns, plot no.), 
+
+Object Oriented - figure, add_axes([left, bottom, width, height]), set_xlabel, set_ylabel, set_title, plot(x,y,color,linewidth/lw,alpha,linestyle/ls,marker,markersize,markerfacecolor,markeredgewidth,markeredgecolor), subplots(nrows, ncols),tight_layout, legend(loc), label, set_xlim(lowerbound,upperbound), set_ylim, scatter
+
+
+Seaborn (sns)
+have more control on how the graphs look
+load_dataset 
+Distribution - distplot([col_name], kde,bins), kdeplot, jointplot(x=col,y=col,data,kind=scatter/hex/kde/reg), pairplot(data,hue,palette), rugplot([col]) 
+Categorical - barplot(x,y,data,estimator), countplot, boxplot, violinplot, stripplot, swarmplot, factorplot 
+Matrix - heatmap(cmap,linecolor,linewidths), clustermap
+Grid - PairGrid, FacetGrid, map, map_diagonal, map_upper, map_lower
+Regression - lmplot(x,y,data,hue)
+set_style, set_context
+
+
+plotly and cufflinks - to view the plots in interactive mode
+import cufflinks as cf
+you need to import libraries from plotly in order to work offline and free source. 
+from plotly import __version__
+from plotly.offline import download_plotlyjs,init_notebook_mode,plot,iplot
+init_notebook_mode(connected = True)
+cf.go_offline()
+
